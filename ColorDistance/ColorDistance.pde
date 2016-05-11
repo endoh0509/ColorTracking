@@ -8,7 +8,7 @@ PVector targetPos;
 PVector offset, offsetSpeed;
 
 ControlP5 cp5;
-boolean isMove;
+boolean isRotate;
 void setup() {
   size(600, 600, P3D);
 
@@ -34,7 +34,7 @@ void setup() {
     .setPosition(0, 45)
     .setSize(50, 14)
     ;
-  isMove = false;
+  isRotate = false;
 }
 
 void draw() {
@@ -42,7 +42,7 @@ void draw() {
 
   pushMatrix();
   translate(width/2, height/2, -100);
-  if (isMove) {
+  if (isRotate) {
     rotateX(map(mouseY, 0, height, 0, PI * 2));
     rotateY(map(mouseX, 0, width, 0, PI * 2));
   }else{
@@ -144,7 +144,7 @@ public void sliderB(int theValue) {
 }
 
 void moveSwitch(boolean theFlag) {
-  isMove = theFlag;
+  isRotate = theFlag;
   println("a toggle event.");
 }
 
