@@ -3,7 +3,7 @@ Processing による色の距離を用いたカラートラッキングのサン
 
 # 環境
 - Processing 3.0.1
-- ControlP5
+- ControlP5 2.2.6
 
 #内容
 
