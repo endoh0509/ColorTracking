@@ -29,7 +29,7 @@ void setup() {
   cp5.addSlider("sliderR", 0, 255, 100, 0, 0, 100, 14).setGroup(colorPannel);
   cp5.addSlider("sliderG", 0, 255, 100, 0, 15, 100, 14).setGroup(colorPannel);
   cp5.addSlider("sliderB", 0, 255, 100, 0, 30, 100, 14).setGroup(colorPannel);
-  cp5.addToggle("moveSwitch")
+  cp5.addToggle("rotateSwitch")
     .setGroup(colorPannel)
     .setPosition(0, 45)
     .setSize(50, 14)
@@ -143,7 +143,7 @@ public void sliderB(int theValue) {
   //println(theValue);
 }
 
-void moveSwitch(boolean theFlag) {
+void rotateSwitch(boolean theFlag) {
   isRotate = theFlag;
   println("a toggle event.");
 }
